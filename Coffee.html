@@ -3,11 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CoffeeShop</title>
+    <title>Coffee Shop</title>
+
     <link rel="stylesheet" href="Coffee.css">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
+
 <body>
-    <header>
+    <!-- Navbar -->
+    <header id="header">
         <nav>
             <h2 class="logo">☕ Coffee House</h2>
             <ul>
@@ -16,65 +22,106 @@
                 <li><a href="#services">Menu</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <button id="darkBtn">🌙 Dark</button>
         </nav>
     </header>
 
-    <section id="hero">
+    <!-- Hero -->
+    <section id="hero" data-aos="fade-up">
         <div class="hero-text">
             <h1>Fresh Coffee Every Morning</h1>
-            <p>Enjoy the rich aroma and taste of freshly brewed coffee made with premium beans. </p>
-            <button>Order Now</button>
+            <p>
+                Enjoy the rich aroma and taste of freshly brewed coffee made with premium beans.
+            </p>
+            <a href="#contact">
+                <button>Order Now</button>
+            </a>
         </div>
+
         <div class="hero-img">
-            <img src="../week_2_Coffee_Shop_Landing_Page/image/hero.jpg" alt="Hero Image">
+            <button id="prevBtn">❮</button>
+            <img
+                id="slider"
+                src="image/hero.jpg"
+                alt="Coffee">
+            <button id="nextBtn">❯</button>
         </div>
     </section>
 
-    <section id="about" >
+    <!-- About -->
+    <section id="about" data-aos="fade-right">
         <div class="about-img">
-            <img src="../week_2_Coffee_Shop_Landing_Page/image/about.jpg" alt="About">
+            <img src="image/about.jpg" alt="About">
         </div>
         <div class="about-text">
-            <h2>About us</h2>
+            <h2>About Us</h2>
             <p>
-                 Welcome to Coffee House! We serve freshly brewed coffee made from premium beans. Our mission is to provide a warm and relaxing place where everyone can enjoy quality coffee and delicious snacks.
+                Welcome to Coffee House! We serve freshly brewed coffee made from premium beans.
+                Our mission is to provide a warm and relaxing place where everyone can enjoy quality
+                coffee and delicious snacks.
             </p>
         </div>
     </section>
 
-    <section id="services">
+    <!-- Menu -->
+    <section id="services" data-aos="zoom-in">
         <h2 class="title">Our Menu</h2>
         <div class="cards">
             <div class="card">
-                <img src="../week_2_Coffee_Shop_Landing_Page/image/menu_1.jpg" alt="">
+                <img src="image/menu_1.jpg" alt="Espresso">
                 <h3>Espresso</h3>
                 <p>Strong and rich coffee for coffee lovers.</p>
             </div>
             <div class="card">
-                <img src="../week_2_Coffee_Shop_Landing_Page/image/menu_2.jpg" alt="">
+                <img src="image/menu_2.jpg" alt="Cappuccino">
                 <h3>Cappuccino</h3>
                 <p>Creamy coffee with smooth milk foam.</p>
             </div>
             <div class="card">
-                <img src="../week_2_Coffee_Shop_Landing_Page/image/menu_3.jpg" alt="">
+                <img src="image/menu_3.jpg" alt="Latte">
                 <h3>Latte</h3>
                 <p>Delicious coffee blended with fresh milk.</p>
             </div>
         </div>
     </section>
 
-    <section id="contact">
+    <!-- Contact -->
+    <section id="contact" data-aos="fade-left">
         <h2>Contact Us</h2>
-        <form>
-            <input type="text" placeholder="Enter Name" >
-            <input type="email" placeholder="Enter Email" >
-            <textarea rows="5" placeholder="Your Message"></textarea>
-            <button>Send Message</button>
+        <form id="contactForm">
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter Name">
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter Email">
+            <textarea
+                id="message"
+                rows="5"
+                placeholder="Your Message"></textarea>
+            <button type="submit">
+                Send Message
+            </button>
         </form>
     </section>
 
-    <footer>
-        <p>&copy; 2026 Coffee House | Made by Mohini</p>
+    <!-- Footer -->
+    <footer data-aos="fade-up">
+        <p>
+            © 2026 Coffee House | Made by Mohini
+        </p>
     </footer>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration:1000,
+            once:true
+        });
+    </script>
+    <script src="Coffee.js"></script>
 </body>
 </html>
