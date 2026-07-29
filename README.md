@@ -1,48 +1,148 @@
 # ☕ Coffee Shop Landing Page
 
-## Project Description
+## 📌 Project Overview
 
-This is a responsive Coffee Shop Landing Page developed as part of my Full Stack Development Internship. The project is built using HTML5, CSS3, and JavaScript. It provides a modern, user-friendly interface with interactive features and a fully responsive layout for desktop and mobile devices.
+This project was developed as part of my **Full Stack Development Internship**.
+
+The project was completed in two phases:
+
+- **Phase 1:** Responsive Coffee Shop Landing Page using HTML, CSS, and JavaScript.
+- **Phase 2:** Rebuilt the same application using React.js with reusable components and React Router.
+
+This project demonstrates frontend development skills using both traditional web technologies and modern React development.
 
 ---
 
-## Features
+# 🚀 Features
 
-- Responsive Design
+## HTML, CSS & JavaScript Version
+
+- Responsive Landing Page
 - Sticky Navigation Bar
-- Hero Section with Image Slider
+- Hero Section
 - About Section
-- Menu Section
-- Contact Form with Validation
-- Dark Mode Toggle
-- Scroll Animations 
+- Coffee Menu
+- Contact Form
 - Footer
-- Hover Effects
-- Mobile Friendly
+- Hero Image Slider
+- Dark Mode Toggle
+- Contact Form Validation
+- AOS Scroll Animations
+- Mobile Responsive Design
 
 ---
 
-## Technologies Used
+## React Version
+
+- Built with React.js
+- Reusable Components
+- React Router
+- Hero Image Slider using React Hooks
+- Dark Mode using React State
+- Contact Form Validation
+- Sticky Navbar
+- Scroll Animations (AOS)
+- Responsive Design
+
+---
+
+# 🛠 Technologies Used
+
+### Frontend
 
 - HTML5
 - CSS3
-- JavaScript
+- JavaScript (ES6)
+
+### React
+
+- React.js
+- React Router DOM
+- React Hooks (useState, useEffect)
+
+### Libraries
+
+- AOS (Animate On Scroll)
+
+### Version Control
+
 - Git
 - GitHub
 
+---
+
+# 📁 Project Structure
+
+```
+week_2_Coffee_Shop_Landing_Page/
+│
+├── Coffee.html
+├── Coffee.css
+├── Coffee.js
+├── image/
+├── ScreenShorts_output/
+├── Internship_task_Report_document.pdf
+├── README.md
+│
+└── React-App/
+    ├── public/
+    ├── src/
+    ├── package.json
+    ├── package-lock.json
+    └── .gitignore
+```
 
 ---
 
-## How to Run the Project
+# 📷 Project Screenshots
 
-1. Download or clone the repository.
-2. Open the project folder.
-3. Open `Coffee.html` in any web browser.
-4. Explore all the interactive features.
+Screenshots of the application are available in the **ScreenShorts_output** folder.
 
 ---
 
-## Author
+# 🎯 Internship Tasks Completed
+
+### HTML, CSS & JavaScript
+
+- Responsive Landing Page
+- Sticky Navbar
+- Hero Image Slider
+- Contact Form Validation
+- Dark Mode
+- Scroll Animations
+- Responsive Layout
+
+### React.js
+
+- React Project Setup
+- Component-Based Architecture
+- React Router
+- Reusable Components
+- Hero Slider using React Hooks
+- Dark Mode using React State
+- Contact Form Validation
+- Scroll Animations using AOS
+
+---
+
+# 🔮 Future Enhancements
+
+The next phase of this project will include:
+
+- Node.js Backend
+- Express.js REST APIs
+- User Registration & Login
+- MongoDB Database Integration
+- CRUD Operations
+- Axios API Integration
+- Full Stack Deployment
+
+---
+
+# 👩‍💻 Author
 
 **Mohini Wagh**
 
+Full Stack Development Intern
+
+GitHub: https://github.com/mohiniwagh631
