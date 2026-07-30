@@ -88,7 +88,7 @@ This project demonstrates frontend development skills using both traditional web
 
 ---
 
-# 📁 Project Structure
+## Folder Structure
 
 ```
 week_2_Coffee_Shop_Landing_Page/
@@ -96,17 +96,36 @@ week_2_Coffee_Shop_Landing_Page/
 ├── Coffee.html
 ├── Coffee.css
 ├── Coffee.js
-├── image/
-├── ScreenShorts_output/
-├── Internship_task_Report_document.pdf
 ├── README.md
+├── Internship_task_Report_document.pdf
 │
-└── React-App/
-    ├── public/
-    ├── src/
+├── image/
+│
+├── ScreenShorts_output/
+│
+├── React-App/
+│   ├── public/
+│   ├── src/
+│   ├── package.json
+│   ├── package-lock.json
+│   └── .gitignore
+│
+└── Backend/
+    ├── controllers/
+    │   ├── authController.js
+    │   └── contactController.js
+    │
+    ├── routes/
+    │   ├── authRoutes.js
+    │   └── contactRoutes.js
+    │
+    ├── data/
+    │   └── users.js
+    │
+    ├── server.js
     ├── package.json
     ├── package-lock.json
-    └── .gitignore
+    └── README.md
 ```
 
 ---
