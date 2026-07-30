@@ -46,6 +46,18 @@ This project demonstrates frontend development skills using both traditional web
 
 ---
 
+## Backend Features
+
+- Node.js Server
+- Express.js REST APIs
+- Registration API
+- Login API
+- Contact API
+- JSON Request Handling
+- CORS Enabled
+- Postman API Testing
+
+
 # 🛠 Technologies Used
 
 ### Frontend
@@ -59,6 +71,11 @@ This project demonstrates frontend development skills using both traditional web
 - React.js
 - React Router DOM
 - React Hooks (useState, useEffect)
+
+### Backend
+
+- Node.js
+- Express.js
 
 ### Libraries
 
@@ -142,7 +159,5 @@ The next phase of this project will include:
 # 👩‍💻 Author
 
 **Mohini Wagh**
-
-Full Stack Development Intern
 
 GitHub: https://github.com/mohiniwagh631
