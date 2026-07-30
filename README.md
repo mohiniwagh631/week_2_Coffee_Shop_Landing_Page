@@ -4,12 +4,13 @@
 
 This project was developed as part of my **Full Stack Development Internship**.
 
-The project was completed in two phases:
+The project was completed in three phases:
 
 - **Phase 1:** Responsive Coffee Shop Landing Page using HTML, CSS, and JavaScript.
 - **Phase 2:** Rebuilt the same application using React.js with reusable components and React Router.
+- **Phase 3:** Developed backend REST APIs using Node.js and Express.js.
 
-This project demonstrates frontend development skills using both traditional web technologies and modern React development.
+This project demonstrates frontend and backend development using modern web technologies.
 
 ---
 
@@ -41,7 +42,7 @@ This project demonstrates frontend development skills using both traditional web
 - Dark Mode using React State
 - Contact Form Validation
 - Sticky Navbar
-- Scroll Animations (AOS)
+- AOS Scroll Animations
 - Responsive Design
 
 ---
@@ -50,47 +51,53 @@ This project demonstrates frontend development skills using both traditional web
 
 - Node.js Server
 - Express.js REST APIs
-- Registration API
-- Login API
+- User Registration API
+- User Login API
 - Contact API
 - JSON Request Handling
 - CORS Enabled
+- MVC Folder Structure
 - Postman API Testing
 
+---
 
 # 🛠 Technologies Used
 
-### Frontend
+## Frontend
 
 - HTML5
 - CSS3
 - JavaScript (ES6)
 
-### React
+## React
 
 - React.js
 - React Router DOM
 - React Hooks (useState, useEffect)
 
-### Backend
+## Backend
 
 - Node.js
 - Express.js
+- CORS
+- Nodemon
 
-### Libraries
+## Libraries
 
 - AOS (Animate On Scroll)
 
-### Version Control
+## Tools
 
+- Postman
 - Git
 - GitHub
+- VS Code
 
 ---
 
-## Folder Structure
+# 📂 Folder Structure
 
-```
+```text
 week_2_Coffee_Shop_Landing_Page/
 │
 ├── Coffee.html
@@ -112,16 +119,8 @@ week_2_Coffee_Shop_Landing_Page/
 │
 └── Backend/
     ├── controllers/
-    │   ├── authController.js
-    │   └── contactController.js
-    │
     ├── routes/
-    │   ├── authRoutes.js
-    │   └── contactRoutes.js
-    │
     ├── data/
-    │   └── users.js
-    │
     ├── server.js
     ├── package.json
     ├── package-lock.json
@@ -132,46 +131,54 @@ week_2_Coffee_Shop_Landing_Page/
 
 # 📷 Project Screenshots
 
-Screenshots of the application are available in the **ScreenShorts_output** folder.
+Application screenshots are available in the **ScreenShorts_output** folder.
 
 ---
 
-# 🎯 Internship Tasks Completed
+# ✅ Internship Tasks Completed
 
-### HTML, CSS & JavaScript
+### Task 1
 
-- Responsive Landing Page
+- Responsive Coffee Shop Landing Page
+- HTML5 & CSS3 Layout
+- Responsive Design
+
+### Task 2
+
 - Sticky Navbar
 - Hero Image Slider
 - Contact Form Validation
 - Dark Mode
-- Scroll Animations
-- Responsive Layout
+- Scroll Animations (AOS)
 
-### React.js
+### Task 3
 
 - React Project Setup
-- Component-Based Architecture
-- React Router
 - Reusable Components
-- Hero Slider using React Hooks
-- Dark Mode using React State
-- Contact Form Validation
-- Scroll Animations using AOS
+- React Router
+- React Hooks
+- Dark Mode
+- Form Validation
+- Hero Slider
+
+### Task 4
+
+- Node.js Backend Setup
+- Express.js Server
+- Registration API
+- Login API
+- Contact API
+- Postman API Testing
 
 ---
 
 # 🔮 Future Enhancements
 
-The next phase of this project will include:
-
-- Node.js Backend
-- Express.js REST APIs
-- User Registration & Login
 - MongoDB Database Integration
 - CRUD Operations
-- Axios API Integration
-- Full Stack Deployment
+- Connect React Frontend using Axios/Fetch
+- Deploy Full Stack Application
+- Live Project Hosting
 
 ---
 
@@ -179,4 +186,4 @@ The next phase of this project will include:
 
 **Mohini Wagh**
 
-GitHub: https://github.com/mohiniwagh631
+GitHub Profile: [mohiniwagh631](https://github.com/mohiniwagh631)
