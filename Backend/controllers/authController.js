@@ -1,63 +1,84 @@
-const users = require("../data/users");
+const User = require("../models/User");
+const bcrypt = require("bcryptjs");
 
-// Registration
-
-const register = (req, res) => {
-
+// Register User
+const registerUser = async (req, res) => {
+  try {
     const { name, email, password } = req.body;
 
-    if (!name || !email || !password) {
-        return res.status(400).json({
-            message: "Please fill all fields"
-        });
-    }
-
-    const existingUser = users.find(user => user.email === email);
+    const existingUser = await User.findOne({ email });
 
     if (existingUser) {
-        return res.status(400).json({
-            message: "User already exists"
-        });
+      return res.status(400).json({
+        message: "User already exists",
+      });
     }
 
-    users.push({
-        name,
-        email,
-        password
+    const hashedPassword = await bcrypt.hash(password, 10);
+
+    const user = new User({
+      name,
+      email,
+      password: hashedPassword,
     });
+
+    await user.save();
 
     res.status(201).json({
-        message: "Registration Successful"
+      message: "Registration Successful",
+      user,
     });
 
+  } catch (error) {
+    res.status(500).json({
+      message: error.message,
+    });
+  }
 };
 
+// Login User
+const loginUser = async (req, res) => {
 
-// Login
-
-const login = (req, res) => {
+  try {
 
     const { email, password } = req.body;
 
-    const user = users.find(
-        user => user.email === email && user.password === password
-    );
+    const user = await User.findOne({ email });
 
     if (!user) {
-
-        return res.status(401).json({
-            message: "Invalid Email or Password"
-        });
-
+      return res.status(400).json({
+        message: "User not found",
+      });
     }
 
-    res.json({
-        message: "Login Successful"
+    const isMatch = await bcrypt.compare(password, user.password);
+
+    console.log("Entered Password:", password);
+    console.log("Stored Hash:", user.password);
+    console.log("Password Match:", isMatch);
+
+    if (!isMatch) {
+      return res.status(400).json({
+        message: "Invalid Password",
+      });
+    }
+
+    res.status(200).json({
+      message: "Login Successful",
+      user,
     });
+
+  } catch (error) {
+
+    res.status(500).json({
+      message: error.message,
+    });
+
+  }
 
 };
 
 module.exports = {
-    register,
-    login
+  registerUser,
+  loginUser,
 };

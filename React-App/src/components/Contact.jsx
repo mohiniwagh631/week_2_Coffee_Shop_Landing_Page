@@ -1,4 +1,5 @@
 import { useState } from "react";
+import axios from "axios";
 
 function Contact() {
 
@@ -6,7 +7,7 @@ function Contact() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     if (name.trim() === "") {
@@ -24,11 +25,32 @@ function Contact() {
       return;
     }
 
-    alert("Form submitted successfully!");
+    try {
 
-    setName("");
-    setEmail("");
-    setMessage("");
+      const res = await axios.post(
+        "http://localhost:5000/api/contact",
+        {
+          name,
+          email,
+          message,
+        }
+      );
+
+      alert(res.data.message);
+
+      // Clear form after successful submission
+      setName("");
+      setEmail("");
+      setMessage("");
+
+    } catch (error) {
+
+      alert(
+        error.response?.data?.message ||
+        "Failed to send message"
+      );
+
+    }
   };
 
   return (
@@ -43,6 +65,7 @@ function Contact() {
           placeholder="Enter Name"
           value={name}
           onChange={(e) => setName(e.target.value)}
+          required
         />
 
         <input
@@ -50,6 +73,7 @@ function Contact() {
           placeholder="Enter Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
+          required
         />
 
         <textarea
@@ -57,6 +81,7 @@ function Contact() {
           placeholder="Your Message"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
+          required
         ></textarea>
 
         <button type="submit">

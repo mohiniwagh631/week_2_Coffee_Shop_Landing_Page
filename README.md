@@ -4,13 +4,14 @@
 
 This project was developed as part of my **Full Stack Development Internship**.
 
-The project was completed in three phases:
+The project was completed in four phases:
 
 - **Phase 1:** Responsive Coffee Shop Landing Page using HTML, CSS, and JavaScript.
 - **Phase 2:** Rebuilt the same application using React.js with reusable components and React Router.
 - **Phase 3:** Developed backend REST APIs using Node.js and Express.js.
+- **Phase 4:** Integrated MongoDB Atlas, implemented CRUD operations, and connected the React frontend with the backend using Axios.
 
-This project demonstrates frontend and backend development using modern web technologies.
+This project demonstrates complete full-stack web development using modern technologies.
 
 ---
 
@@ -44,6 +45,9 @@ This project demonstrates frontend and backend development using modern web tech
 - Sticky Navbar
 - AOS Scroll Animations
 - Responsive Design
+- Axios Integration
+- User Registration Page
+- User Login Page
 
 ---
 
@@ -54,10 +58,22 @@ This project demonstrates frontend and backend development using modern web tech
 - User Registration API
 - User Login API
 - Contact API
+- Contact CRUD Operations
 - JSON Request Handling
 - CORS Enabled
 - MVC Folder Structure
+- MongoDB Atlas Integration
+- Password Encryption using bcryptjs
 - Postman API Testing
+
+---
+
+## Database Features
+
+- MongoDB Atlas Cloud Database
+- User Registration Data Storage
+- Contact Messages Storage
+- CRUD Operations using Mongoose
 
 ---
 
@@ -74,6 +90,7 @@ This project demonstrates frontend and backend development using modern web tech
 - React.js
 - React Router DOM
 - React Hooks (useState, useEffect)
+- Axios
 
 ## Backend
 
@@ -81,6 +98,12 @@ This project demonstrates frontend and backend development using modern web tech
 - Express.js
 - CORS
 - Nodemon
+- bcryptjs
+
+## Database
+
+- MongoDB Atlas
+- Mongoose
 
 ## Libraries
 
@@ -118,9 +141,10 @@ week_2_Coffee_Shop_Landing_Page/
 │   └── .gitignore
 │
 └── Backend/
+    ├── config/
     ├── controllers/
+    ├── models/
     ├── routes/
-    ├── data/
     ├── server.js
     ├── package.json
     ├── package-lock.json
@@ -165,20 +189,17 @@ Application screenshots are available in the **ScreenShorts_output** folder.
 
 - Node.js Backend Setup
 - Express.js Server
-- Registration API
-- Login API
+- User Registration API
+- User Login API
 - Contact API
+
+### Task 5
+
+- Contact CRUD Operations
+- MongoDB Atlas Integration
+- React Frontend Connected with Backend using Axios
+- Password Encryption using bcryptjs
 - Postman API Testing
-
----
-
-# 🔮 Future Enhancements
-
-- MongoDB Database Integration
-- CRUD Operations
-- Connect React Frontend using Axios/Fetch
-- Deploy Full Stack Application
-- Live Project Hosting
 
 ---
 
@@ -186,4 +207,4 @@ Application screenshots are available in the **ScreenShorts_output** folder.
 
 **Mohini Wagh**
 
-GitHub Profile: [mohiniwagh631](https://github.com/mohiniwagh631)
+GitHub: https://github.com/mohiniwagh631
